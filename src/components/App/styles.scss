@@ -1,0 +1,34 @@
+@import '../../reset.scss';
+@import '../../variables.scss';
+
+.app {
+  &_container {
+    background: $clr-background;
+    font-family: $font-main;
+    padding-bottom: 200px;
+  }
+  
+  &_wrapper {
+    box-sizing: border-box;
+    width: 1072px;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 32px;
+      line-height: 39px;
+      font-weight: 500;
+      color: $clr-main-text;
+    }
+  
+    p, li {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 500;
+      color: $clr-main-text;
+    }
+  
+    a {
+      color: $clr-main-text;
+    }
+  }
+}

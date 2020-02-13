@@ -1,0 +1,34 @@
+@import '../../variables';
+
+.download {
+  &_container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 78px;
+  }
+  &_button {
+    position: relative;
+    background: $clr-white;
+    border-radius: 10px;
+    padding: 31px 32px;
+    margin: 8px 0;
+
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    &:hover {
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    }
+  }
+  &_icon {
+    display: block;
+    position: absolute;
+    top: 17px;
+    right: 32px;
+    width: 48px;
+    height: 48px;
+    background: $clr-black;
+  }
+}

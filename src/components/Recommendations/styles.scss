@@ -1,0 +1,38 @@
+@import '../../variables';
+
+.recommend { 
+  &_container {
+    padding-top: 72px;
+  }
+  &_h2 {
+    text-align: center;
+    margin-bottom: 16px;  
+  }
+  &_list {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-column-gap: 48px;
+    grid-row-gap: 47px;
+
+    padding: 40px 0;
+  }
+  &_item {
+    &_img {
+      display: block;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background-color: $clr-black;
+      margin: 0 auto 16px;
+    }
+    &_content {
+      p, li {
+        color: $clr-second-text;
+      }
+      ul {
+        padding-top: 24px;
+      }
+    }
+  }
+}
