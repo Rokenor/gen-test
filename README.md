@@ -1,4 +1,4 @@
-#Get-test
+# Gen-test
 
 ### `npm install`
 ### `npm start`
