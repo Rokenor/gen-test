@@ -1,12 +1,12 @@
 @import '../../variables';
 
-.recommend { 
+.recommend {
   &_container {
     padding-top: 72px;
   }
   &_h2 {
     text-align: center;
-    margin-bottom: 16px;  
+    margin-bottom: 16px;
   }
   &_list {
     display: grid;
@@ -14,7 +14,6 @@
     grid-template-rows: auto auto;
     grid-column-gap: 48px;
     grid-row-gap: 47px;
-
     padding: 40px 0;
   }
   &_item {

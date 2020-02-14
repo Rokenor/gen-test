@@ -9,7 +9,6 @@
     margin: 0 auto;
     padding: 16px;
     width: 552px;
-
     &_hidden {
       display: none;
     }
@@ -17,10 +16,8 @@
   &_close {
     display: block;
     position: absolute;
-
     top: 16px;
     right: 16px;
-
     width: 16px;
     height: 16px;
     background: $clr-black;
@@ -35,41 +32,35 @@
   }
   &_input {
     width: 340px;
-
     border-radius: 8px;
     outline: none;
     border: 1px solid $clr-border;
     text-align: center;
-
     font-size: 16px;
     line-height: 20px;
     font-weight: 500;
     color: $clr-main-text;
-
     padding: 14px 0;
-    margin: 0 auto; 
+    margin: 0 auto;
     &::placeholder {
       color: $clr-placeholder-text;
     }
-
     &_error {
       border-color: $clr-error;
+      color: $clr-error;
     }
   }
   &_button {
     border: none;
     background: $clr-emerald;
-
     width: 340px;
     padding: 20px 0;
     margin: 24px auto;
     border-radius: 50px;
-
     font-size: 16px;
     line-height: 20px;
     color: $clr-white;
     text-align: center;
-
     cursor: pointer;
     &:hover {
       box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
