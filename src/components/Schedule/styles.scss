@@ -1,0 +1,92 @@
+@import '../../variables';
+
+.schedule {
+  &_container {
+    margin-bottom: 56px;
+  }
+  &_grid {
+    display: flex;
+    flex-direction: column;
+  }
+  &_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    &_title {
+      display: block;
+      height: 128px;
+      margin-bottom: 16px;
+
+      font-size: 16px;
+      line-height: 128px;
+      font-weight: 500;
+      color: $clr-main-text;
+    }
+  }
+  &_col {
+    &_title {
+      display: block;
+      width: 128px;
+      margin: 0 0 16px 16px;
+      text-align: center;
+    }
+    &_group {
+      display: block;
+      width: 272px;
+      &_single {
+        width: 128px;
+        text-align: center;
+        margin: 0 0 16px 16px;
+      }
+      &_double {
+        width: 272px;
+        text-align: center;
+        margin: 0 0 16px 16px;
+      }
+      &_connection {
+        display: block;
+        width: 100%;
+        height: 24px;
+        margin-top: 16px;
+        border: 2px solid $clr-column-title-border; 
+        border-bottom: none; 
+      }
+    }
+  }
+  &_cell {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    width: 128px;
+    height: 128px;
+    margin: 0 0 16px 16px;
+
+    background: $clr-cell-background;
+    border-radius: 18px;
+    overflow: hidden;
+    cursor: pointer;
+
+    text-align: center;
+    &:hover {
+      box-shadow: 0px 0px 14px rgba(29, 233, 182, 0.7);
+    }
+
+    &_text {
+      display: block;
+      position: absolute;
+      bottom: 16px;
+
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 600;
+      color: $clr-cell-text;
+      text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    &_img {
+      width: 128px;
+      height: 128px;
+    }
+  }
+}

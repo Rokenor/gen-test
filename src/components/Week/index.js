@@ -1,16 +1,12 @@
 import React from 'react';
 
 import './styles.scss';
+import arrow from './images/select@2x.png';
 
 const Week = () => {
   return (
     <div className="week_container">
-      <select className="week_select" id="weeks">
-        <option value="week1" selected>Week 1</option>
-        <option value="week2">Week 2</option>
-        <option value="week3">Week 3</option>
-        <option value="week4" >Week 4</option>
-      </select>
+      <a className="week_button" href="/">Week1 <img src={arrow} alt="Arrow"/></a>
     </div>
   )
 }
