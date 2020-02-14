@@ -10,6 +10,10 @@ const Schedule = () => {
   const grid = setGrid(data.resources);
   const columnsHeader = setTitles(grid.columnsTitles);
 
+  if (Object.keys(data.resources).length <= 0) {
+    return <div style={{textAlign: 'center', margin: '20px 0', color: 'black'}}>Loading data...</div>
+  }
+
   if (data.error !== "") {
     return <div style={{textAlign: 'center', margin: '20px 0', color: 'red'}}>Schedule can't loaded: {data.error}</div>
   }
