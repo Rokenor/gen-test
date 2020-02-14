@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { validateEmail } from '../../utils/common';
 
 import './styles.scss';
+import cross from './images/cross@2x.png';
 
 const Resend = () => {
   const [ email, setEmail ] = useState('');
@@ -27,7 +28,9 @@ const Resend = () => {
         className='resend_close'
         href="/"
         onClick={closeHandler}
-      >{""}</a>
+      >
+        <img src={cross} alt="close" />
+      </a>
       <p className="resend_text">Enter email if you wish to resend the meal plan link</p>
       <form className="resend_form" action="">
         <input 

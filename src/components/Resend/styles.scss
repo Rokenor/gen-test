@@ -18,9 +18,10 @@
     position: absolute;
     top: 16px;
     right: 16px;
-    width: 16px;
-    height: 16px;
-    background: $clr-black;
+    img {
+      width: 16px;
+      height: 16px;   
+    }
   }
   &_text {
     margin: 24px 0 12px;
