@@ -42,14 +42,26 @@ export function setGrid(data) {
           if (cell.coords.column === gridData[i][j].col && cell.coords.row === gridData[i][j].row) {
             gridData[i][j] = {
               ...gridData[i][j],
+              cellId: cell.id,
               text: cell.text,
               image: cell.image
             }
           }
         })
       }
+      // check row for filled cells
+      let counterFilledCells = 0;
+      gridData[i].map((cell, cellIndex) => {
+        if(cell.cellId) {
+          counterFilledCells++;
+        }
+      })
+      if (counterFilledCells === 0) {
+        gridData.splice(i, 1);
+      }
     }
   }
+  
   return { gridData , columnsTitles, rowsTitles };
 };
 
